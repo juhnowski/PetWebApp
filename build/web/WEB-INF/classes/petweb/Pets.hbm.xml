@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07.12.2015 16:04:25 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="petweb.Pets" table="pets" schema="public" optimistic-lock="version">
+        <id name="nickname" type="string">
+            <column name="nickname" length="200" />
+            <generator class="assigned" />
+        </id>
+        <property name="speciesName" type="string">
+            <column name="species_name" length="200" not-null="true" />
+        </property>
+        <property name="birthdate" type="date">
+            <column name="birthdate" length="13" not-null="true" />
+        </property>
+        <property name="male" type="boolean">
+            <column name="male" not-null="true" />
+        </property>
+        <property name="owner" type="string">
+            <column name="owner" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

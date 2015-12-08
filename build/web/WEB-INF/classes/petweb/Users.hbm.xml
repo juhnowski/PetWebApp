@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07.12.2015 16:04:25 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="petweb.Users" table="users" schema="public" optimistic-lock="version">
+        <id name="login" type="string">
+            <column name="login" length="200" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="password" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

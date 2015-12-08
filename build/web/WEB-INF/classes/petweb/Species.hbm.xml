@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07.12.2015 16:04:25 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="petweb.Species" table="species" schema="public" optimistic-lock="version">
+        <id name="name" type="string">
+            <column name="name" length="200" />
+            <generator class="assigned" />
+        </id>
+    </class>
+</hibernate-mapping>
